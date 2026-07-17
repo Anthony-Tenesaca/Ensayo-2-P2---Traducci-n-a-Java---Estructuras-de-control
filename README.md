@@ -1,0 +1,2 @@
+# Ensayo-2-P2---Traducci-n-a-Java---Estructuras-de-control
+Aplicar la sintaxis del lenguaje Java mediante la resolución de ejercicios que involucren declaración de variables, entrada de datos, operadores, estructuras selectivas y estructuras repetitivas, utilizando buenas prácticas de programación, el entorno de desarrollo NetBeans y un repositorio en GitHub para la gestión y publicación del código fuente.
