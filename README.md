@@ -8,9 +8,11 @@ Autor: Anthony German Tenesaca Rosales
 
 Docente: Ing. Carlos Vargas
 
-Descripción del Proyecto
+Descripción del deber
+
 Este repositorio contiene la solución a los 11 ejercicios prácticos de lógica algorítmica traducidos al lenguaje Java utilizando el IDE NetBeans. Se aplican estructuras de control secuenciales, condicionales (if-else) y repetitivas (for, while).
 
 Estructura de Archivos
+
 Los archivos están organizados y nombrados secuencialmente para su correcta ejecución:
 Ejercicio1.java hasta Ejercicio11
