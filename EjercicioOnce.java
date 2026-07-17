@@ -1,33 +1,34 @@
-import java.util.Scanner;
-
 /**
  * @author Anthony German Tenesaca Rosales
  */
-public class Ejercicio11 {
+import java.util.Scanner;
+
+public class EjercicioOnce {
     public static void main(String[] args) {
-        try (Scanner entrada = new Scanner(System.in)) {
-            System.out.println("Por favor ingrese 10 numeros:");
-            System.out.print("Numero 1: ");
-            int primerNumero = entrada.nextInt();
-            
-            int mayor = primerNumero;
-            int menor = primerNumero;
-            
-            for (int i = 2; i <= 10; i++) {
-                System.out.print("Numero " + i + ": ");
-                int numero = entrada.nextInt();
-                
-                if (numero > mayor) {
-                    mayor =  numero;
-                }
-                if (numero < menor) {
-                    menor = numero;
-                }
-            }
-            
-            System.out.println("\n--- Resultados ---");
-            System.out.println("Numero mayor: " + mayor);
-            System.out.println("Numero menor: " + menor);
+        Scanner teclado = new Scanner(System.in);
+        double[] numeros = new double[10];
+        double mayor, menor;
+
+        System.out.println("--- Ingreso de 10 numeros ---");
+        for (int i = 0; i < 10; i++) {
+            System.out.print("Ingrese numero " + (i + 1) + ": ");
+            numeros[i] = teclado.nextDouble();
         }
+
+        mayor = numeros[0];
+        menor = numeros[0];
+
+        for (int i = 1; i < 10; i++) {
+            if (numeros[i] > mayor) {
+                mayor = numeros[i];
+            }
+            if (numeros[i] < menor) {
+                menor = numeros[i];
+            }
+        }
+
+        System.out.println("\n--- Resultados ---");
+        System.out.println("Numero mayor: " + mayor);
+        System.out.println("Numero menor: " + menor);
     }
 }

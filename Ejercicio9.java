@@ -1,19 +1,19 @@
-import java.util.Scanner;
-
 /**
  * @author Anthony German Tenesaca Rosales
  */
+import java.util.Scanner;
+
 public class Ejercicio9 {
     public static void main(String[] args) {
-        try (Scanner entrada = new Scanner(System.in)) {
-            System.out.print("Ingrese un numero entero para ver su tabla de multiplicar: ");
-            int numero = entrada.nextInt();
-            
-            System.out.println("\nTabla de multiplicar del " + numero + ":");
-            for (int i = 1; i <= 12; i++) {
-                int resultado = numero * i;
-                System.out.println(numero + " x " + i + " = " + resultado);
-            }
+        Scanner teclado = new Scanner(System.in);
+        int numero;
+
+        System.out.print("Ingrese un numero entero: ");
+        numero = teclado.nextInt();
+
+        System.out.println("\n--- Tabla del " + numero + " ---");
+        for (int i = 1; i < 13; i++) {
+            System.out.println(numero + " x " + i + " = " + (numero * i));
         }
     }
 }

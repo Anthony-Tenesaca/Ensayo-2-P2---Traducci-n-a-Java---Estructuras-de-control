@@ -1,26 +1,27 @@
-import java.util.Scanner;
-
 /**
  * @author Anthony German Tenesaca Rosales
  */
+import java.util.Scanner;
+
 public class Ejercicio7 {
     public static void main(String[] args) {
-        try (Scanner entrada = new Scanner(System.in)) {
-            int contador = 0;
-            int sumaTotal = 0;
-            
-            System.out.println("Ingrese numeros enteros(numero negativo para terminar):");
-            int numero = entrada.nextInt();
-            
-            while (numero >= 0) {
+        Scanner teclado = new Scanner(System.in);
+        int cantidad = 0;
+        double sumaTotal = 0;
+        double numero;
+
+        do {
+            System.out.print("Ingrese un numero positivo (o uno negativo para salir): ");
+            numero = teclado.nextDouble();
+
+            if (numero >= 0) {
                 sumaTotal += numero;
-                contador++;
-                numero = entrada.nextInt();
+                cantidad++;
             }
-            
-            System.out.println("\n--- Resumen ---");
-            System.out.println("Cantidad de numeros ingresados: " + contador);
-            System.out.println("Suma total: " + sumaTotal);
-        }
+        } while (numero >= 0);
+
+        System.out.println("\n--- Resultados ---");
+        System.out.println("Cantidad de numeros ingresados: " + cantidad);
+        System.out.println("Suma total: " + sumaTotal);
     }
 }

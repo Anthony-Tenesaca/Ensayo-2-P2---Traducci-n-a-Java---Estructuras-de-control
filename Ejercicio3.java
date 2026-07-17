@@ -1,18 +1,18 @@
-import java.util.Scanner;
-
 /**
  * @author Anthony German Tenesaca Rosales
  */
+import java.util.Scanner;
+
 public class Ejercicio3 {
     public static void main(String[] args) {
-        try (Scanner entrada = new Scanner(System.in)) {
-            System.out.print("Ingrese su edad: ");
-            int edad = entrada.nextInt();
-            
-            if (edad >= 18) {
-                System.out.println("Es mayor de edad.");
-            }
+        Scanner teclado = new Scanner(System.in);
+        int edad;
+
+        System.out.print("Ingrese su edad: ");
+        edad = teclado.nextInt();
+
+        if (edad >= 18) {
+            System.out.println("Es mayor de edad.");
         }
     }
 }
-

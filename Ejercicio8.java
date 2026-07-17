@@ -1,24 +1,18 @@
-import java.util.Scanner;
-
 /**
  * @author Anthony German Tenesaca Rosales
  */
+import java.util.Scanner;
+
 public class Ejercicio8 {
     public static void main(String[] args) {
-        try (Scanner entrada = new Scanner(System.in)) {
-            String claveCorrecta = "java2026";
-            String intentoClave;
-            
-            do {
-                System.out.print("Ingrese la contrasena: ");
-                intentoClave = entrada.nextLine();
-                
-                if (!intentoClave.equals(claveCorrecta)) {
-                    System.out.println("Contrasena incorrecta. Intente de nuevo.");
-                }
-            } while (!intentoClave.equals(claveCorrecta));
-            
-            System.out.println("Acceso concedido.");
-        }
+        Scanner teclado = new Scanner(System.in);
+        String clave;
+
+        do {
+            System.out.print("Ingrese la contrasena: ");
+            clave = teclado.nextLine();
+        } while (!clave.equals("java2026"));
+
+        System.out.println("Acceso concedido.");
     }
 }
