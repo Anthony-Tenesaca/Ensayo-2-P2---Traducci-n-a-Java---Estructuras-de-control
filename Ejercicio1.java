@@ -20,7 +20,7 @@ public class Ejercicio1 {
         System.out.print("Ingrese su carrera: ");
         carrera = teclado.nextLine();
 
-        System.out.print("Ingrese su estatura (ej. 1.75): ");
+        System.out.print("Ingrese su estatura (ej. 1,75): ");
         estatura = teclado.nextDouble();
 
         System.out.println("\n--- Datos Registrados ---");
